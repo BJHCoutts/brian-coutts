@@ -21,7 +21,7 @@
 
 	<div class='main-grid-center'>
 
-			burb
+			<h2>Header</h2>
 
 	</div>
 	
