@@ -48,7 +48,7 @@
 		cursor: pointer;
 		position: absolute;
     transform-origin: 50% 50% 0px;
-		transition: transform .5s ease-in;
+		transition: transform .4s ease-in;
 		backface-visibility: hidden;
 	}
 
@@ -68,13 +68,12 @@
 			<MenuIcon />
 		</div>
 		
-		<div class="icon-container ${$menuIsOpen? 'front' : 'back'}" on:click={() => menuIsOpen.set(false)}>
+		<div class={`icon-container ${$menuIsOpen? 'front' : 'back'}`} on:click={() => menuIsOpen.set(false)}>
 			<ClearIcon />
 		</div>
 
 		<div class="place-holder"></div>
 
-		<span on:click={toggleMenu}>{$menuIsOpen}</span>
 		<a href="mailto: bjhcoutts@gmail.com">Contact Me: bjhcoutts@gmail.com</a>
 	</div>
 	
