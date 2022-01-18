@@ -1,11 +1,17 @@
 <script lang='ts'>
 
-	// import NavMenuIcon from './NavMenuIcon.svelte'
+	import ClearIcon from "../shared/icons/ClearIcon.svelte";
+	import MenuIcon from "../shared/icons/MenuIcon.svelte";
+	import { menuIsOpen } from '../../stores/ui'
+	
+	const toggleMenu = () => {
+		menuIsOpen.set(!$menuIsOpen)
+	}
 
 </script>
 
 <style>
-
+ 
 	header {
 		position: sticky;
 		top:0;
@@ -13,16 +19,63 @@
 		right:0;
 		z-index: 3;
 		overflow: visible;
+		padding: 1em 0;
+	}
+
+	.back {
+		transform: rotateY(180deg);
+	}
+
+	.center-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.front {
+		transform: rotateY(0deg);
+	}
+
+	.icon-container {
+		border-radius: 50%;
+		border: 2px solid var(--fg);
+		width: fit-content;
+		aspect-ratio: 1 / 1;
+		display: grid;
+		place-items: center;
+		padding: .2em;
+		background-color: var(--bg);
+		cursor: pointer;
+		position: absolute;
+    transform-origin: 50% 50% 0px;
+		transition: transform .5s ease-in;
+		backface-visibility: hidden;
+	}
+
+	.place-holder {
+		height: 34.39px;
+		width: 34.39px;
+		display: inline-block;
 	}
 
 </style>
 
 <header class='main-grid-layout glassmorph shadow-down'>
 
-	<div class='main-grid-center'>
+	<div class='main-grid-layout-center center-container'>
 
-			<h2>Header</h2>
+		<div class={`icon-container ${$menuIsOpen? 'back' : 'front'}`} on:click={() => menuIsOpen.set(true)}>
+			<MenuIcon />
+		</div>
+		
+		<div class="icon-container ${$menuIsOpen? 'front' : 'back'}" on:click={() => menuIsOpen.set(false)}>
+			<ClearIcon />
+		</div>
 
+		<div class="place-holder"></div>
+
+		<span on:click={toggleMenu}>{$menuIsOpen}</span>
+		<a href="mailto: bjhcoutts@gmail.com">Contact Me: bjhcoutts@gmail.com</a>
 	</div>
 	
 </header>

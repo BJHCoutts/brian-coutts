@@ -1,7 +1,7 @@
-import { writable, Writable } from "svelte/store"
+import { writable } from "svelte/store"
 
-export const menuIsOpen: Writable<boolean> = writable(false)
+export const menuIsOpen = writable(false)
 
-export const imageModalIsOpen: Writable<boolean> = writable(false)
+export const imageModalIsOpen = writable(false)
 
-export const imageModalUrl: Writable<string> = writable('')
+export const imageModalUrl = writable('')

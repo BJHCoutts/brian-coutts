@@ -58,10 +58,6 @@
 		font-family: var(--sans);
 		scroll-behavior: smooth;
 	}
-
-	:global(body) {
-
-	}
 	
 	:global(a) {
 		color: var(--accent);
@@ -96,7 +92,7 @@
 		border: 1px solid hsla(0, 0%, 100%, 0.18);
 		padding: 1em;
 	}
-
+	
 	:global(.main-grid-layout) {
 		display: grid;
 		grid-template-columns: var(--main-grid-layout);
@@ -105,7 +101,14 @@
 	:global(.main-grid-layout > *) {
 		grid-column: center;
 	}
-
+	
+		:global(.main-grid-layout-center) {
+			grid-column: center;
+		}
+		
+		:global(.main-grid-layout-full) {
+			grid-column: full;
+		}
 
 </style>
 
