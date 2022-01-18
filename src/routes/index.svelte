@@ -1,10 +1,19 @@
 <script lang='ts'>
 
-	import MainImage from "../components/indexPage/MainImage.svelte";
+	import Art from "../components/indexPage/Art.svelte";
+	import Design from "../components/indexPage/Design.svelte";
+	import IntroText from "../components/indexPage/IntroText.svelte";
+	import WebDev from "../components/indexPage/WebDev.svelte";
+	import IntroImage from "../components/indexPage/IntroImage.svelte";
 
 </script>
 
-<MainImage />
+<IntroImage />
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<IntroText />
+
+<WebDev />
+
+<Art />
+
+<Design />
