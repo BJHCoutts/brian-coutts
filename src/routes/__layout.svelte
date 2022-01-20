@@ -31,13 +31,9 @@
 			[full-end]
 			;
 			
-		--margin-top: calc(-3em - var(--header-height) - 2em); 
-		--padding-top: calc(-3em - var(--header-height) - 2em); 
+		--header-height: 68.38px;
 			
-		--padding: 3em 0 4em;
-		--padding-bottom: 8em;
-		--padding-container: 3em 3em 4em;
-		--margin-bottom: 8rem;
+		--margin-bottom: 6rem;
 		--margin-bottom-small: 3rem;
 
 		--box-shadow: 2px 2px 9px var(--black);
@@ -70,6 +66,7 @@
 
 	:global(h1, h2, h3, h4, h5, h6) {
 		font-family: var(--display);
+		margin-bottom: .45em;
 	}
 
 	:global(hr) {
@@ -106,13 +103,21 @@
 		grid-column: center;
 	}
 	
-		:global(.main-grid-layout-center) {
-			grid-column: center;
-		}
-		
-		:global(.main-grid-layout-full) {
-			grid-column: full;
-		}
+	:global(.main-grid-layout-center) {
+		grid-column: center;
+	}
+	
+	:global(.main-grid-layout-full) {
+		grid-column: full;
+	}
+
+	:global(.margin-bottom) {
+		margin-bottom: var(--margin-bottom)
+	}
+
+	:global(.margin-bottom-small) {
+		margin-bottom: var(--margin-bottom-small)
+	}
 
 </style>
 

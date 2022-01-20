@@ -1,7 +1,7 @@
 <style>
 
 	h1 {
-		font-size: 4rem;
+		font-size: clamp(4rem, 10vw, 6rem);
 	}
 
 	h2 {
@@ -18,8 +18,8 @@
 			linear-gradient(to bottom, hsla(231, 54%, 97%, 0.40), hsla(29, 50%, 29%, 0.60)),
 			url('../../../assets/images/aleppo.jpg')
 		;
-		margin-top: -68.38px;
-		padding: calc(68.38px * 2) 0;
+		margin-top: calc(var(--header-height) * -1);
+		padding: calc(var(--header-height) * 2) 0;
 		background-attachment: fixed;
 		background-position: center;
 		background-size: cover;
@@ -54,7 +54,7 @@
 
 </style>
 
-<section class='main-grid-layout'>
+<section class='main-grid-layout margin-bottom-small'>
 
 	<h1>Brian Coutts</h1>
 	<hr />
