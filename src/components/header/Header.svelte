@@ -32,6 +32,18 @@
 		align-items: center;
 	}
 
+	.email-container {
+		border-radius: 5px;
+		border: 2px solid var(--fg);
+		width: fit-content;
+		display: grid;
+		place-items: center;
+		padding: .2em .4em;
+		background-color: var(--bg);
+		cursor: pointer;
+		color: var(--fg);
+	}
+
 	.front {
 		transform: rotateY(0deg);
 	}
@@ -74,7 +86,7 @@
 
 		<div class="place-holder"></div>
 
-		<a href="mailto: bjhcoutts@gmail.com">Contact Me: bjhcoutts@gmail.com</a>
+		<a href="mailto: bjhcoutts@gmail.com" target='_blank' class='email-container'>Contact Me: bjhcoutts@gmail.com</a>
 	</div>
 	
 </header>

@@ -5,11 +5,11 @@
 <style>
 
 	footer {
-		background-color: var(--grey-25);
+		background-color: var(--bg);
 	}
 
 	h2 {
-		color: var(--white);
+		color: var(--fg);
 	}
 
 </style>

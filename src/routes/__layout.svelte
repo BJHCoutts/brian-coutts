@@ -14,6 +14,8 @@
 		--accent: hsl(20, 20%, 70%);
 		--bg: hsl(285, 10%, 35%);
 		--fg: hsl(20, 20%, 85%);
+		--white: hsl(20, 15%, 95%);
+		--black: hsl(290, 5%, 15%);
 
 		--display: 'Italiana', serif;
 		--sans: 'Work Sans', sans-serif;
@@ -38,7 +40,9 @@
 		--margin-bottom: 8rem;
 		--margin-bottom-small: 3rem;
 
-		--box-shadow: 3px 3px 9px hsla(0, 0%, 5%, 0.5);
+		--box-shadow: 2px 2px 9px var(--black);
+		
+		--drop-shadow: drop-shadow(3px 3px 4px var(--black));
 
 		--header-box-shadow: 4px hsla(0, 0%, 5%, 0.95);
 
