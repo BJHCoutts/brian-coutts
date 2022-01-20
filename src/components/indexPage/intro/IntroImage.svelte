@@ -20,7 +20,10 @@
 		;
 		margin-top: -68.38px;
 		padding: calc(68.38px * 2) 0;
-		background-position: fixed;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		background-repeat: none;
 		position: relative;
 	}
 
@@ -37,6 +40,18 @@
 		opacity: 50%;
 	}
 
+	.disc-line-break {
+		display: block;
+	}
+
+	@media (min-width: 450px) {
+
+		.disc-line-break {
+			display: none;
+		}
+
+	}
+
 </style>
 
 <section class='main-grid-layout'>
@@ -44,6 +59,10 @@
 	<h1>Brian Coutts</h1>
 	<hr />
 	<h2>Web Dev ◇ Design ◇ Fine Art</h2>
-	<small class='details'>Digital painting by Brian Coutts. Original photo by Joseph Eid.</small>
+	<small class='details'>
+		Digital painting by Brian Coutts.
+		<br class='disc-line-break'/> 
+		Original photo by Joseph Eid.
+	</small>
 
 </section>
