@@ -34,7 +34,7 @@
 
 	.email-container {
 		border-radius: 5px;
-		border: 2px solid var(--fg);
+		border: 2px solid var(--accent);
 		width: fit-content;
 		display: grid;
 		place-items: center;
@@ -42,6 +42,7 @@
 		background-color: var(--bg);
 		cursor: pointer;
 		color: var(--fg);
+		box-shadow: var(--box-shadow);
 	}
 
 	.front {
@@ -50,7 +51,7 @@
 
 	.icon-container {
 		border-radius: 50%;
-		border: 2px solid var(--fg);
+		border: 2px solid var(--accent);
 		width: fit-content;
 		aspect-ratio: 1 / 1;
 		display: grid;
@@ -62,6 +63,7 @@
     transform-origin: 50% 50% 0px;
 		transition: transform .4s ease-in;
 		backface-visibility: hidden;
+		box-shadow: var(--box-shadow);
 	}
 
 	.place-holder {
