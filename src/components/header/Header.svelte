@@ -74,7 +74,7 @@
 
 		<div class="place-holder"></div>
 
-		<a href="mailto: bjhcoutts@gmail.com">Contact Me: bjhcoutts@gmail.com</a>
+		<a href="mailto: bjhcoutts@gmail.com" target='_blank'>Contact Me: bjhcoutts@gmail.com</a>
 	</div>
 	
 </header>
