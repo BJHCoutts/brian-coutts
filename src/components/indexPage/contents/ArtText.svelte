@@ -1,1 +1,11 @@
-<h2>Art</h2>
+<div class="margin-bottom">
+
+	<h2>Fine Art</h2>
+	
+	<div class="text-container">
+	
+		<p>Made free from the need to have a purpose other than to exist in itself.</p>
+	
+	</div>
+
+</div>
