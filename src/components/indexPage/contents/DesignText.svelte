@@ -1,6 +1,6 @@
 <div class="margin-bottom">
 
-	<h2>Design</h2>
+	<h2><a href='/design'>Design</a></h2>
 	
 	<div class="text-container">
 	

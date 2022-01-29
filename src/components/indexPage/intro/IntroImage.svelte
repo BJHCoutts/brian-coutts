@@ -29,7 +29,7 @@
 
 	section > * {
 		color: var(--white);
-		filter: var(--drop-shadow);
+		text-shadow: var(--text-shadow);
 	}
 
 	.details {
@@ -58,6 +58,7 @@
 
 	<h1>Brian Coutts</h1>
 	<hr />
+	<h2>Site is Work In Progess</h2>
 	<h2>Web Dev ◇ Design ◇ Fine Art</h2>
 	<small class='details'>
 		Digital painting by Brian Coutts.
