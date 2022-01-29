@@ -132,4 +132,4 @@
 	<slot />
 </main>
 
-<!-- <Footer /> -->
+<Footer />

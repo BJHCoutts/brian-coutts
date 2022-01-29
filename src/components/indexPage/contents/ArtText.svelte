@@ -1,7 +1,7 @@
 <style>
 
 	.container {
-		grid-column: -1 / 1;
+		order: 1;
 	}
 
 </style>

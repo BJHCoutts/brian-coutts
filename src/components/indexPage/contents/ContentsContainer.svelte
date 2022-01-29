@@ -16,20 +16,64 @@ import WebDevText from "./WebDevText.svelte";
 
 	section {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		grid-gap: 6em 4em;
+	}
+
+	section > *:nth-child(1) {
+		order:1;
+	}
+	section > *:nth-child(2) {
+		order:2;
+	}
+	section > *:nth-child(3) {
+		order: 3;
+	}
+	section > *:nth-child(4) {
+		order: 4;
+	}
+	section > *:nth-child(5) {
+		order: 5;
+	}
+	section > *:nth-child(6) {
+		order: 6;
+	}
+
+	@media (min-width: 600px) {
+
+		section {
+			grid-template-columns: 1fr 1fr;
+		}
+		section > *:nth-child(3) {
+			order: 4;
+		}
+		section > *:nth-child(4) {
+			order: 3;
+		}
 	}
 
 </style>
 
 <section class="contents-container margin-bottom">
-	<WebDevImage />
-	<WebDevText />
-	<ArtImage />
-	<ArtText />
-	<DesignImage />
-	<DesignText />
+	<div>
+		<WebDevImage />
+	</div>
+	<div>
+		<WebDevText />
+	</div>
+	<div>
+		<ArtImage />
+	</div>
+	<div>
+		<ArtText />
+	</div>
+	<div>
+		<DesignImage />
+	</div>
+	<div>
+		<DesignText />
+	</div>
 </section>
 
-<!-- <ContactImage />
-<ContactText /> -->
+<ContactImage />
+<ContactText />
