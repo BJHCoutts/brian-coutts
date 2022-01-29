@@ -1,4 +1,13 @@
-<div class="margin-bottom">
+<style>
+
+	.container {
+		grid-column: -1 / 1;
+	}
+
+</style>
+
+
+<div class="margin-bottom container">
 
 	<h2><a href='art'>Fine Art</a></h2>
 	

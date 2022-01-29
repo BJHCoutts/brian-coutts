@@ -11,13 +11,25 @@ import WebDevImage from "./WebDevImage.svelte";
 import WebDevText from "./WebDevText.svelte";
 
 </script>
-<section class="contents-container">
+
+<style>
+
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 6em 4em;
+	}
+
+</style>
+
+<section class="contents-container margin-bottom">
 	<WebDevImage />
 	<WebDevText />
-	<DesignImage />
-	<DesignText />
 	<ArtImage />
 	<ArtText />
-	<ContactImage />
-	<ContactText />
+	<DesignImage />
+	<DesignText />
 </section>
+
+<!-- <ContactImage />
+<ContactText /> -->
