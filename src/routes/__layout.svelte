@@ -16,6 +16,8 @@
 		--fg: hsl(20, 20%, 85%);
 		--white: hsl(20, 15%, 95%);
 		--black: hsl(290, 5%, 15%);
+		--dark-overlay: hsla(285, 10%, 25%, .9);
+		--light-overlay: hsla(20, 20%, 70%, .80);
 
 		--display: 'Italiana', serif;
 		--sans: 'Work Sans', sans-serif;
@@ -37,12 +39,11 @@
 		--margin-bottom-small: 3rem;
 
 		--box-shadow: 2px 2px 9px var(--black);
-		
-		--drop-shadow: drop-shadow(3px 3px 4px var(--black));
-
+		--filter-drop-shadow: drop-shadow(3px 3px 4px var(--black));
 		--header-box-shadow: 4px hsla(0, 0%, 5%, 0.95);
-
 		--shadow-down: 0px 4px 4px var(--black);
+		--shadow-up: 0px -4px 4px var(--black);
+		--text-shadow: 2px 2px 6px var(--black);
 
 	}
 

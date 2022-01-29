@@ -1,6 +1,6 @@
 <div class="margin-bottom">
 
-	<h2>Fine Art</h2>
+	<h2><a href='art'>Fine Art</a></h2>
 	
 	<div class="text-container">
 	
