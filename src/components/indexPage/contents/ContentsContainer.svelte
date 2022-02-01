@@ -16,18 +16,23 @@ onMount(() => {
 
 	const contentsImageContainers = document.querySelectorAll('.contents-image-container')
 
-	const observer = new IntersectionObserver( (entries) => {
+	const observerOptions = {
+		threshhold: .5,
+		rootMargin: "0px 0px 5px 0px"
+	}
+
+	const observer = new IntersectionObserver( (entries, observerOptions) => {
 
 		entries.forEach( entry => {
 			if (!entry.isIntersecting) { 
-				entry.target.classList.toggle('image-onscreen')
-				return
+				entry.target.classList.remove('image-onscreen')
 			}else{
-				console.log('intersecting', entry.target.classList)
+				entry.target.classList.add('image-onscreen')
+				// observer.unobserve(entry.target)
 			}
 		})
 
-	})
+	}, observerOptions)
 
 	contentsImageContainers.forEach(image => {
 		observer.observe(image)
@@ -66,8 +71,8 @@ onMount(() => {
 
 	.contents-image-container {
 		transition: all .5s ease-in;
+		opacity: 0;
 		transform: rotateX(90deg);
-		opacity: .25;
 	}
 	
 	.image-onscreen {
@@ -106,10 +111,12 @@ onMount(() => {
 	<div class='contents-image-container'>
 		<DesignImage />
 	</div>
-	<div>
+	<div class='contents-image-container'>
 		<DesignText />
 	</div>
 </section>
 
 <ContactImage />
 <ContactText />
+
+<div style='display:hidden;' class="image-onscreen"/>
