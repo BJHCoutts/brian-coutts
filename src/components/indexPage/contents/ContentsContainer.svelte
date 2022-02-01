@@ -1,4 +1,6 @@
 <script>
+import { onMount } from "svelte";
+
 import ArtImage from "./ArtImage.svelte";
 import ArtText from "./ArtText.svelte";
 import ContactImage from "./ContactImage.svelte";
@@ -9,6 +11,29 @@ import DesignText from "./DesignText.svelte";
 
 import WebDevImage from "./WebDevImage.svelte";
 import WebDevText from "./WebDevText.svelte";
+
+onMount(() => {
+
+	const contentsImageContainers = document.querySelectorAll('.contents-image-container')
+
+	const observer = new IntersectionObserver( (entries) => {
+
+		entries.forEach( entry => {
+			if (!entry.isIntersecting) { 
+				entry.target.classList.toggle('image-onscreen')
+				return
+			}else{
+				console.log('intersecting', entry.target.classList)
+			}
+		})
+
+	})
+
+	contentsImageContainers.forEach(image => {
+		observer.observe(image)
+	});
+
+})
 
 </script>
 
@@ -39,6 +64,17 @@ import WebDevText from "./WebDevText.svelte";
 		order: 6;
 	}
 
+	.contents-image-container {
+		transition: all .5s ease-in;
+		transform: rotateX(90deg);
+		opacity: .25;
+	}
+	
+	.image-onscreen {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+
 	@media (min-width: 600px) {
 
 		section {
@@ -55,19 +91,19 @@ import WebDevText from "./WebDevText.svelte";
 </style>
 
 <section class="contents-container margin-bottom">
-	<div>
+	<div class='contents-image-container'>
 		<WebDevImage />
 	</div>
 	<div>
 		<WebDevText />
 	</div>
-	<div>
+	<div class='contents-image-container'>
 		<ArtImage />
 	</div>
 	<div>
 		<ArtText />
 	</div>
-	<div>
+	<div class='contents-image-container'>
 		<DesignImage />
 	</div>
 	<div>
