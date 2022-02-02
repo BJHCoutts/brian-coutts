@@ -8,5 +8,5 @@
 
 </style>
 
-<img src="" alt="">
+<img src="./src/assets/vectors/toHelp.svg" alt="">
 

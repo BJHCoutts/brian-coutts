@@ -8,5 +8,4 @@
 
 </style>
 
-<img src="./src/assets/images/aleppo.jpg" alt="">
-
+<img src="./src/assets/images/aleppo.jpg" alt="placeholder">

@@ -84,12 +84,14 @@
 	<div class='contents-image-container' use:appearOnScroll>
 		<DesignImage />
 	</div>
-	<div class='contents-image-container'>
+	<div>
 		<DesignText />
 	</div>
 </section>
 
-<ContactImage />
+<div class='contents-image-container' use:appearOnScroll>
+	<ContactImage />
+</div>
 <ContactText />
 
 <div style='display:hidden;' class="image-onscreen"/>
