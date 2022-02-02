@@ -1,44 +1,17 @@
 <script>
-import { onMount } from "svelte";
 
-import ArtImage from "./ArtImage.svelte";
-import ArtText from "./ArtText.svelte";
-import ContactImage from "./ContactImage.svelte";
-import ContactText from "./ContactText.svelte";
+	import { appearOnScroll } from '../../../utils/appearOnScroll'
 
-import DesignImage from "./DesignImage.svelte";
-import DesignText from "./DesignText.svelte";
+	import ArtImage from "./ArtImage.svelte";
+	import ArtText from "./ArtText.svelte";
+	import ContactImage from "./ContactImage.svelte";
+	import ContactText from "./ContactText.svelte";
 
-import WebDevImage from "./WebDevImage.svelte";
-import WebDevText from "./WebDevText.svelte";
+	import DesignImage from "./DesignImage.svelte";
+	import DesignText from "./DesignText.svelte";
 
-onMount(() => {
-
-	const contentsImageContainers = document.querySelectorAll('.contents-image-container')
-
-	const observerOptions = {
-		threshhold: .5,
-		rootMargin: "0px 0px 5px 0px"
-	}
-
-	const observer = new IntersectionObserver( (entries, observerOptions) => {
-
-		entries.forEach( entry => {
-			if (!entry.isIntersecting) { 
-				entry.target.classList.remove('image-onscreen')
-			}else{
-				entry.target.classList.add('image-onscreen')
-				// observer.unobserve(entry.target)
-			}
-		})
-
-	}, observerOptions)
-
-	contentsImageContainers.forEach(image => {
-		observer.observe(image)
-	});
-
-})
+	import WebDevImage from "./WebDevImage.svelte";
+	import WebDevText from "./WebDevText.svelte";
 
 </script>
 
@@ -96,19 +69,19 @@ onMount(() => {
 </style>
 
 <section class="contents-container margin-bottom">
-	<div class='contents-image-container'>
+	<div class='contents-image-container' use:appearOnScroll>
 		<WebDevImage />
 	</div>
 	<div>
 		<WebDevText />
 	</div>
-	<div class='contents-image-container'>
+	<div class='contents-image-container' use:appearOnScroll>
 		<ArtImage />
 	</div>
 	<div>
 		<ArtText />
 	</div>
-	<div class='contents-image-container'>
+	<div class='contents-image-container' use:appearOnScroll>
 		<DesignImage />
 	</div>
 	<div class='contents-image-container'>
