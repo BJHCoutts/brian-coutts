@@ -3,6 +3,7 @@ import ContentsContainer from "../components/indexPage/contents/ContentsContaine
 import IntroImage from "../components/indexPage/intro/IntroImage.svelte";
 import IntroText from "../components/indexPage/intro/IntroText.svelte";
 import NewsContainer from "../components/indexPage/news/NewsContainer.svelte";
+import FeaturedContainer from "../components/shared/featured/FeaturedContainer.svelte";
 
 
 
@@ -20,4 +21,4 @@ import NewsContainer from "../components/indexPage/news/NewsContainer.svelte";
 
 <hr />
 
-<ContentsContainer />
+<FeaturedContainer />
