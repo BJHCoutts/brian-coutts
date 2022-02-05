@@ -1,8 +1,3 @@
-<script>
-import WebDevImage from "../../indexPage/contents/WebDevImage.svelte";
-import WebDevText from "../../indexPage/contents/WebDevText.svelte";
-
-</script>
 <style>
 
 	.container {
@@ -25,8 +20,6 @@ import WebDevText from "../../indexPage/contents/WebDevText.svelte";
 			grid-template-columns: 1fr 1fr;
 		}
 
-		
-
 		.inner-border {
 			grid-column: 1 / -1;
 			z-index: -1;
@@ -39,5 +32,4 @@ import WebDevText from "../../indexPage/contents/WebDevText.svelte";
 <div class="container">
 	<div class="inner-border"/>
 	<slot/>
-
 </div>
