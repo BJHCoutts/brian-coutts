@@ -25,6 +25,7 @@
 
 	li a {
 		font: 400 2.25rem/1.25em var(--display);
+		text-decoration: none;
 	}
 
 	.container-inner {
