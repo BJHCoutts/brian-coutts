@@ -84,6 +84,7 @@
 	:global(img) {
 		max-width: 100%;
 		display: block;
+		background-color: darkslategrey;
 	}
 
 	:global(.glassmorph) {

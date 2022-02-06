@@ -8,10 +8,9 @@
 	import FeaturedImage from '../../shared/featured/FeaturedImage.svelte';
 
 	import ArtText from "./ArtText.svelte";
-	import ContactImage from "./ContactImage.svelte";
-	import ContactText from "./ContactText.svelte";
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
+import Contact from '../../shared/contact/Contact.svelte';
 
 </script>
 
@@ -34,7 +33,4 @@
 
 </FeaturedContainer>
 
-<div class='contents-image-container' use:appearOnScroll>
-	<ContactImage />
-</div>
-<ContactText />
+<Contact />

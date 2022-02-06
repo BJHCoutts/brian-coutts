@@ -1,9 +1,12 @@
 <style>
 
 	img {
-		background-color: darkslategrey;
 		height: 100%;
 		width: 100%;
+		grid-column: 1 / -1;
+		height: 250px;
+		object-fit: cover;
+		
 	}
 
 </style>
