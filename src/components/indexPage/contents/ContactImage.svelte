@@ -11,5 +11,5 @@
 
 </style>
 
-<img src="./src/assets/vectors/toHelp.svg" alt="">
+<img src="/vectors/toHelp.svg" alt="">
 

@@ -1,7 +1,5 @@
 <script>
 
-	import { appearOnScroll } from '../../../utils/appearOnScroll'
-
 	import FeaturedContainer from '../../shared/featured/FeaturedContainer.svelte';
 	import FeaturedRowImageLeft from '../../shared/featured/FeaturedRowImageLeft.svelte';
 	import FeaturedRowImageRight from '../../shared/featured/FeaturedRowImageRight.svelte';
@@ -10,7 +8,7 @@
 	import ArtText from "./ArtText.svelte";
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
-import Contact from '../../shared/contact/Contact.svelte';
+	import Contact from '../../shared/contact/Contact.svelte';
 
 </script>
 

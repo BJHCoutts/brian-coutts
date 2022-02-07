@@ -1,7 +1,7 @@
 <style>
 
-	.container {
-		order: 1;
+	h2 {
+		background-color: var(--bg);
 	}
 
 </style>

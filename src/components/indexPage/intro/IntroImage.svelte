@@ -16,7 +16,7 @@
 		grid-column: full;
 		background-image: 
 			linear-gradient(to bottom, hsla(231, 54%, 97%, 0.40), hsla(29, 50%, 29%, 0.60)),
-			url('../../../assets/images/aleppo.jpg')
+			url('/images/aleppo.jpg')
 		;
 		margin-top: calc(var(--header-height) * -1);
 		padding: calc(var(--header-height) * 2) 0;

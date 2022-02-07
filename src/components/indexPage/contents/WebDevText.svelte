@@ -1,3 +1,11 @@
+<style>
+
+	h2 {
+		background-color: var(--bg);
+	}
+
+</style>
+
 <div class="margin-bottom">
 
 	<h2><a href='/webdev'>Web Development</a></h2>
