@@ -3,10 +3,6 @@
 	import ClearIcon from "../shared/icons/ClearIcon.svelte";
 	import MenuIcon from "../shared/icons/MenuIcon.svelte";
 	import { menuIsOpen } from '../../stores/ui'
-	
-	const toggleMenu = () => {
-		menuIsOpen.set(!$menuIsOpen)
-	}
 
 </script>
 
@@ -30,6 +26,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.email {
+		color:var(--fg);
 	}
 
 	.email-container {

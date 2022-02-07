@@ -26,6 +26,6 @@
 </style>
 
 <div>
-	<img src={`./src/assets/images/${imageFileName}`} alt="placeholder" use:appearOnScroll>
+	<img src={`/images/${imageFileName}`} alt="placeholder" use:appearOnScroll>
 	<div style='display:hidden;' class="image-onscreen"/>
 </div>
