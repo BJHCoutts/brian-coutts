@@ -8,7 +8,6 @@
 	import ArtText from "./ArtText.svelte";
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
-	import Contact from '../../shared/contact/Contact.svelte';
 
 </script>
 
@@ -30,5 +29,3 @@
 	</FeaturedRowImageLeft>
 
 </FeaturedContainer>
-
-<Contact />

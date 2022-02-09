@@ -5,7 +5,12 @@
 <style>
 
 	footer {
-		background-color: var(--bg);
+		background-image: url('/images/toHelpGrid.png');
+		background-position: 50% 100%;
+		background-size: contain;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		padding-bottom: 25vw;
 	}
 
 	h2 {
@@ -14,8 +19,10 @@
 
 </style>
 
-<footer class='main-grid-layout padding'>
-	<div class='main-grid-center'>
-		<h2>Footer: Use Cube Pixel pattern transition</h2>
+<footer>
+	<div class="text-container main-grid-layout glassmorph-dark shadow-down">
+		<div class='main-grid-layout-center'>
+			<h2>Contact Me: <a href="mailto:bjhcoutts@gmail.com">bjhcoutts@gmail.com</a></h2>
+		</div>
 	</div>
 </footer>
