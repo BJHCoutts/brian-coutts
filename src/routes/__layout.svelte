@@ -1,6 +1,6 @@
 <script lang='ts'>
 
-	import Footer from '../components/footer/Footer.svelte';
+	// import Footer from '../components/footer/Footer.svelte';
 	import Header from '../components/header/Header.svelte'
 	import Menu from '../components/menu/Menu.svelte';
 	import ImageModal from '../components/shared/imageModal/ImageModal.svelte';
@@ -146,4 +146,4 @@
 	<slot />
 </main>
 
-<Footer />
+<!-- <Footer /> -->
