@@ -1,7 +1,7 @@
 <style>
 
 	footer {
-		/* background-image: url('../static/images/toHelpGrid.png'); */
+		background-image: url('/images/toHelpGrid.png');
 		background-position: 50% 100%;
 		background-size: contain;
 		background-attachment: fixed;
