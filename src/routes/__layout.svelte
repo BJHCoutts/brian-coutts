@@ -95,6 +95,15 @@
 		border: 1px solid hsla(0, 0%, 100%, 0.18);
 		padding: 1em;
 	}
+
+	:global(.glassmorph-dark) {
+		background: hsla(0, 0%, 0%, 0.5);
+		box-shadow: 0 8px 32px 0 hsla(236, 0%, 40%, 0.6);
+		backdrop-filter: blur(3px);
+		-webkit-backdrop-filter: blur(3px);
+		border: 1px solid hsla(0, 0%, 100%, 0.18);
+		padding: 1em;
+	}
 	
 	:global(.main-grid-layout) {
 		display: grid;
