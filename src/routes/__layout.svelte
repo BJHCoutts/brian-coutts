@@ -121,6 +121,10 @@
 		margin-bottom: var(--margin-bottom-small)
 	}
 
+	:global(.shadow-down) {
+		box-shadow: var(--shadow-down);
+	}
+
 </style>
 
 <ImageModal />
