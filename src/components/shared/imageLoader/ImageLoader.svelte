@@ -1,8 +1,7 @@
 <script lang='ts'>
-import { onMount } from "svelte";
 
-
-	import IntersectionObserver from "../intersectionalObserver/IntersectionObserver.svelte";
+	import { onMount } from "svelte";
+	import IntersectionObserver from "../intersectionObserver/IntersectionObserver.svelte";
 	import Image from "./Image.svelte";
 
 	export let src
