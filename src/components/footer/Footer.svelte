@@ -1,3 +1,7 @@
+<script>
+import InstaGramIcon from "../shared/icons/InstaGramIcon.svelte";
+
+</script>
 <style>
 
 	footer {
@@ -7,6 +11,7 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		padding-bottom: 25vw;
+		margin-top: auto;
 	}
 
 	h2 {
@@ -18,7 +23,7 @@
 <footer>
 	<div class="text-container main-grid-layout glassmorph-dark shadow-down">
 		<div class='main-grid-layout-center'>
-			<h2>Contact Me: <a href="mailto:bjhcoutts@gmail.com">bjhcoutts@gmail.com</a></h2>
+			<h2>Contact Me: <a href="mailto:bjhcoutts@gmail.com">bjhcoutts@gmail.com</a> or 	<a href="https://www.instagram.com/brian_coutts/"><InstaGramIcon/></a></h2>
 		</div>
 	</div>
 </footer>
