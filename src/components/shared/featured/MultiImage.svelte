@@ -2,14 +2,25 @@
 
 	img {
 		background-color: grey;
-		width: 15%;
-		height: 15%;
+		width: 25%;
+		height: 25%;
 		position: absolute;
 	}
 
 	.animatedContainer {
-		position: relative;
+		transform-origin: center;
 		border: 2px solid red;
+		height: 50%;
+		width: 50%;
+		position: absolute;
+		inset: 25%;
+		transition: 1s;
+		cursor: pointer;
+		transform: scale(100%, 100%) rotate(0deg);
+	}
+	
+	.animatedContainer:hover {
+		transform: scale(125%, 150%) rotate(15deg);
 	}
 
 	.background {
@@ -26,12 +37,16 @@
 
 	.image1{
 		top: 0;
+		right: auto;
 		left:0;
+		bottom: auto;
 	}
 
 	.image2{
 		top: 0;
 		right:0;
+		bottom: auto;
+		left: auto;
 	}
 	
 	.image3{
@@ -50,10 +65,10 @@
 
 	<div class='background' />
 	<div class="animatedContainer">
-		<img src='image1' alt='' />
-		<img src='image2' alt='' />
-		<img src='image3' alt='' />
-		<img src='image4' alt='' />
+		<img src='' alt='' class='image1' />
+		<img src='' alt='' class='image2'/>
+		<img src='' alt='' class='image3' />
+		<img src='' alt='' class='image4' />
 
 	</div>
 
