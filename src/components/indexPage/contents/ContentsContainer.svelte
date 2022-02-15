@@ -8,13 +8,14 @@
 	import ArtText from "./ArtText.svelte";
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
+import MultiImage from '../../shared/featured/MultiImage.svelte';
 
 </script>
 
 <FeaturedContainer>
 
 	<FeaturedRowImageLeft>
-		<FeaturedImage imageFileName={`aleppo.jpg`} />
+		<MultiImage />
 		<WebDevText />
 	</FeaturedRowImageLeft>
 	

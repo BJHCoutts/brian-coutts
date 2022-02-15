@@ -11,7 +11,6 @@ import InstaGramIcon from "../shared/icons/InstaGramIcon.svelte";
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		padding-bottom: 25vw;
-		margin-top: auto;
 	}
 
 	h2 {
