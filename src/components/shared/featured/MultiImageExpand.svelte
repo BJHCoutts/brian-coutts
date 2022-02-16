@@ -1,3 +1,9 @@
+<script lang='ts'>
+
+	let isMouseOver = false
+
+</script>
+
 <style>
 
 	img {
@@ -34,33 +40,37 @@
 		position: relative;
 	}
 
-	.image1{
+	.image1 {
 		top: -20%;
 		left: 50%;
 	}
 
-	.image2{
+	.image2 {
 		top: 30%;
 		right: -10%;
 	}
 	
-	.image3{
+	.image3 {
 		bottom: -20%;
 		right: 50%;
 	}
 
-	.image4{
+	.image4 {
 		bottom: 30%;
 		left:-10%;
 	}
 
-	.image5{
+	.image5 {
 		bottom: 30%;
 		left:-10%;
 	}
-	.image6{
+	.image6 {
 		bottom: 30%;
 		left:-10%;
+	}
+
+	.mouseIsOver {
+		border: solid 3px red;
 	}
 
 </style>
@@ -68,9 +78,9 @@
 <div class='container'>
 
 	<div class='background' />
-	<div class="animatedContainer">
-		<img src='' alt='' class='image1' />
-		<img src='' alt='' class='image2'/>
+	<div class="animatedContainer" on:mouseenter={() => isMouseOver = true} on:mouseleave={()=>isMouseOver = false} >
+		<img src='' alt='' class='image1' class:mouseIsOver='{isMouseOver}'/>
+		<img src='' alt='' class='image2' />
 		<img src='' alt='' class='image3' />
 		<img src='' alt='' class='image4' />
 		<img src='' alt='' class='image5' />
