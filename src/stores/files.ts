@@ -2,9 +2,7 @@
 
 // just do everything random
 
-const fs = require('fs');
-const files = fs.readdirSync('/');
-// const abstractArt
+export const abstractArt = import.meta.glob("/static/images/abstractExpressionist/*.png");
+// export const abstractArt = import.meta.glob("/images/abstractArt/*.{png,svg}");
+// export const abstractArt = import.meta.glob("../static/images/**/*.{png,svg}");
 
-console.log(files)
-console.log('hi')

@@ -24,7 +24,7 @@ var __toModule = (module2) => {
 __export(exports, {
   default: () => Contact
 });
-var import_index_544abe4e = __toModule(require("../../chunks/index-544abe4e.js"));
-const Contact = (0, import_index_544abe4e.c)(($$result, $$props, $$bindings, slots) => {
+var import_index_ab720396 = __toModule(require("../../chunks/index-ab720396.js"));
+const Contact = (0, import_index_ab720396.c)(($$result, $$props, $$bindings, slots) => {
   return `<h1>Contact</h1>`;
 });

@@ -8,6 +8,9 @@
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
 	import MultiImageExpand from '../../shared/featured/MultiImageExpand.svelte';
+	import { abstractArt } from '../../../stores/files';
+
+	console.log(Object.keys(abstractArt)[0].slice(7))
 
 </script>
 
@@ -21,6 +24,10 @@
 	}
 
 </style>
+
+<p>doop</p>
+<img src={Object.keys(abstractArt)[0].slice(7)} alt="">
+<p>doop</p>
 
 <FeaturedContainer>
 

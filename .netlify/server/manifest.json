@@ -4,7 +4,7 @@
     "src": ".svelte-kit/build/app.js",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ],
     "css": [
       "assets/app-6009617f.css"
@@ -15,10 +15,10 @@
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-8c1f9f0c.css"
+      "assets/entries/pages/__layout.svelte-0a5117e1.css"
     ]
   },
   "src/routes/__error.svelte": {
@@ -26,7 +26,7 @@
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ],
     "css": [
       "assets/entries/pages/__error.svelte-dc70ba0b.css"
@@ -37,10 +37,33 @@
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
+    ],
+    "dynamicImports": [
+      "static/images/abstractExpressionist/104perspCrissCrossOverCloudFin.png",
+      "static/images/abstractExpressionist/11vibrantWavelengthFin.png",
+      "static/images/abstractExpressionist/14greenFin.png",
+      "static/images/abstractExpressionist/1WetWaercolourSplotchesFin.png",
+      "static/images/abstractExpressionist/2diagonalBlurGridBlueBrownFin.png",
+      "static/images/abstractExpressionist/33birdStarFin.png",
+      "static/images/abstractExpressionist/34underTableWebLaceLookingUpFin.png",
+      "static/images/abstractExpressionist/3earthToSkyFin.png",
+      "static/images/abstractExpressionist/45hardOutSmearJustBlendColourFin.png",
+      "static/images/abstractExpressionist/59strongLinesPrimesFin.png",
+      "static/images/abstractExpressionist/64beckerFin.png",
+      "static/images/abstractExpressionist/6trianglesFin.png",
+      "static/images/abstractExpressionist/7springSmearsFin.png",
+      "static/images/abstractExpressionist/84waterColorChalkDNAFin.png",
+      "static/images/abstractExpressionist/8crackedCornerTreesFin.png",
+      "static/images/abstractExpressionist/96orange4objectsFin.png",
+      "static/images/abstractExpressionist/98karenHaleFin.png",
+      "static/images/abstractExpressionist/autumnBoatSmears.png",
+      "static/images/abstractExpressionist/sharpBreezeFin.png",
+      "static/images/abstractExpressionist/trianglesInAMeshFin.png",
+      "static/images/abstractExpressionist/washAndChonksFin.png"
     ],
     "css": [
-      "assets/entries/pages/index.svelte-4df2a825.css"
+      "assets/entries/pages/index.svelte-73814f23.css"
     ]
   },
   "src/routes/contact.svelte": {
@@ -48,7 +71,7 @@
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ]
   },
   "src/routes/design.svelte": {
@@ -56,7 +79,7 @@
     "src": "src/routes/design.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ]
   },
   "src/routes/webdev.svelte": {
@@ -64,7 +87,7 @@
     "src": "src/routes/webdev.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ]
   },
   "src/routes/art.svelte": {
@@ -72,10 +95,178 @@
     "src": "src/routes/art.svelte",
     "isEntry": true,
     "imports": [
-      "_index-544abe4e.js"
+      "_index-ab720396.js"
     ]
   },
-  "_index-544abe4e.js": {
-    "file": "chunks/index-544abe4e.js"
+  "_index-ab720396.js": {
+    "file": "chunks/index-ab720396.js"
+  },
+  "static/images/abstractExpressionist/104perspCrissCrossOverCloudFin.png": {
+    "file": "chunks/104perspCrissCrossOverCloudFin-ab35ed4a.js",
+    "src": "static/images/abstractExpressionist/104perspCrissCrossOverCloudFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/104perspCrissCrossOverCloudFin-da7048dc.png"
+    ]
+  },
+  "static/images/abstractExpressionist/11vibrantWavelengthFin.png": {
+    "file": "chunks/11vibrantWavelengthFin-66e4ef75.js",
+    "src": "static/images/abstractExpressionist/11vibrantWavelengthFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/11vibrantWavelengthFin-0d828868.png"
+    ]
+  },
+  "static/images/abstractExpressionist/14greenFin.png": {
+    "file": "chunks/14greenFin-1207f8ad.js",
+    "src": "static/images/abstractExpressionist/14greenFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/14greenFin-80282d23.png"
+    ]
+  },
+  "static/images/abstractExpressionist/1WetWaercolourSplotchesFin.png": {
+    "file": "chunks/1WetWaercolourSplotchesFin-c9b15558.js",
+    "src": "static/images/abstractExpressionist/1WetWaercolourSplotchesFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/1WetWaercolourSplotchesFin-f71f3cd9.png"
+    ]
+  },
+  "static/images/abstractExpressionist/2diagonalBlurGridBlueBrownFin.png": {
+    "file": "chunks/2diagonalBlurGridBlueBrownFin-91cc063f.js",
+    "src": "static/images/abstractExpressionist/2diagonalBlurGridBlueBrownFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/2diagonalBlurGridBlueBrownFin-94ab13b4.png"
+    ]
+  },
+  "static/images/abstractExpressionist/33birdStarFin.png": {
+    "file": "chunks/33birdStarFin-3fad3265.js",
+    "src": "static/images/abstractExpressionist/33birdStarFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/33birdStarFin-1e6649c2.png"
+    ]
+  },
+  "static/images/abstractExpressionist/34underTableWebLaceLookingUpFin.png": {
+    "file": "chunks/34underTableWebLaceLookingUpFin-37c93c47.js",
+    "src": "static/images/abstractExpressionist/34underTableWebLaceLookingUpFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/34underTableWebLaceLookingUpFin-736b3678.png"
+    ]
+  },
+  "static/images/abstractExpressionist/3earthToSkyFin.png": {
+    "file": "chunks/3earthToSkyFin-b473519f.js",
+    "src": "static/images/abstractExpressionist/3earthToSkyFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/3earthToSkyFin-71f1f441.png"
+    ]
+  },
+  "static/images/abstractExpressionist/45hardOutSmearJustBlendColourFin.png": {
+    "file": "chunks/45hardOutSmearJustBlendColourFin-aa07bd45.js",
+    "src": "static/images/abstractExpressionist/45hardOutSmearJustBlendColourFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/45hardOutSmearJustBlendColourFin-a2464157.png"
+    ]
+  },
+  "static/images/abstractExpressionist/59strongLinesPrimesFin.png": {
+    "file": "chunks/59strongLinesPrimesFin-4df68539.js",
+    "src": "static/images/abstractExpressionist/59strongLinesPrimesFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/59strongLinesPrimesFin-2bfa5775.png"
+    ]
+  },
+  "static/images/abstractExpressionist/64beckerFin.png": {
+    "file": "chunks/64beckerFin-1105e6eb.js",
+    "src": "static/images/abstractExpressionist/64beckerFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/64beckerFin-f684fc0e.png"
+    ]
+  },
+  "static/images/abstractExpressionist/6trianglesFin.png": {
+    "file": "chunks/6trianglesFin-3233c57e.js",
+    "src": "static/images/abstractExpressionist/6trianglesFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/6trianglesFin-7325b1f3.png"
+    ]
+  },
+  "static/images/abstractExpressionist/7springSmearsFin.png": {
+    "file": "chunks/7springSmearsFin-f2d2699a.js",
+    "src": "static/images/abstractExpressionist/7springSmearsFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/7springSmearsFin-51633edc.png"
+    ]
+  },
+  "static/images/abstractExpressionist/84waterColorChalkDNAFin.png": {
+    "file": "chunks/84waterColorChalkDNAFin-0ab65e5b.js",
+    "src": "static/images/abstractExpressionist/84waterColorChalkDNAFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/84waterColorChalkDNAFin-2ce66173.png"
+    ]
+  },
+  "static/images/abstractExpressionist/8crackedCornerTreesFin.png": {
+    "file": "chunks/8crackedCornerTreesFin-d61eddd7.js",
+    "src": "static/images/abstractExpressionist/8crackedCornerTreesFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/8crackedCornerTreesFin-f08eadee.png"
+    ]
+  },
+  "static/images/abstractExpressionist/96orange4objectsFin.png": {
+    "file": "chunks/96orange4objectsFin-d76d0313.js",
+    "src": "static/images/abstractExpressionist/96orange4objectsFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/96orange4objectsFin-5fe1e394.png"
+    ]
+  },
+  "static/images/abstractExpressionist/98karenHaleFin.png": {
+    "file": "chunks/98karenHaleFin-8101c685.js",
+    "src": "static/images/abstractExpressionist/98karenHaleFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/98karenHaleFin-ebd1d213.png"
+    ]
+  },
+  "static/images/abstractExpressionist/autumnBoatSmears.png": {
+    "file": "chunks/autumnBoatSmears-02e881d3.js",
+    "src": "static/images/abstractExpressionist/autumnBoatSmears.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/autumnBoatSmears-c138c3da.png"
+    ]
+  },
+  "static/images/abstractExpressionist/sharpBreezeFin.png": {
+    "file": "chunks/sharpBreezeFin-d41f8a15.js",
+    "src": "static/images/abstractExpressionist/sharpBreezeFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/sharpBreezeFin-4a1b8cf3.png"
+    ]
+  },
+  "static/images/abstractExpressionist/trianglesInAMeshFin.png": {
+    "file": "chunks/trianglesInAMeshFin-13eeea06.js",
+    "src": "static/images/abstractExpressionist/trianglesInAMeshFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/trianglesInAMeshFin-3f1981e5.png"
+    ]
+  },
+  "static/images/abstractExpressionist/washAndChonksFin.png": {
+    "file": "chunks/washAndChonksFin-362d8bd9.js",
+    "src": "static/images/abstractExpressionist/washAndChonksFin.png",
+    "isDynamicEntry": true,
+    "assets": [
+      "assets/washAndChonksFin-20b0de73.png"
+    ]
   }
 }
