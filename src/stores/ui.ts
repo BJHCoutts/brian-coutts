@@ -14,7 +14,7 @@ export const innerMenuSpring = spring(0,{
 
 export const outerMenuSpring = spring(0,{
 	stiffness: .2,
-	damping: .8,
+	damping: .9,
 });
 
 export const handleMenuClick = ():void => {
