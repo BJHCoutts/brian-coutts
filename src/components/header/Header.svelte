@@ -2,7 +2,7 @@
 
 	import ClearIcon from "../shared/icons/ClearIcon.svelte";
 	import MenuIcon from "../shared/icons/MenuIcon.svelte";
-	import { menuIsOpen } from '../../stores/ui'
+	import { handleMenuClick, menuIsOpen } from '../../stores/ui'
 
 </script>
 
@@ -78,11 +78,11 @@
 
 	<div class='main-grid-layout-center center-container'>
 
-		<div class={`icon-container ${$menuIsOpen? 'back' : 'front'}`} on:click={() => menuIsOpen.set(true)}>
+		<div class={`icon-container ${$menuIsOpen? 'back' : 'front'}`} on:click={handleMenuClick}>
 			<MenuIcon />
 		</div>
 		
-		<div class={`icon-container ${$menuIsOpen? 'front' : 'back'}`} on:click={() => menuIsOpen.set(false)}>
+		<div class={`icon-container ${$menuIsOpen? 'front' : 'back'}`} on:click={handleMenuClick}>
 			<ClearIcon />
 		</div>
 
