@@ -74,17 +74,17 @@
 	}
 
 	.image1.mouseIsOver {
-		transform: translateY(250%) rotate(-3deg);
+		transform: translateY(340%) rotate(-3deg);
 	}
 
 	.image2.mouseIsOver {
-		transform: translateX(-300%) rotate(-3deg);
+		transform: translateX(-400%) rotate(-3deg);
 	}
 	.image3.mouseIsOver {
-		transform: translateY(-250%) rotate(-3deg);
+		transform: translateY(-360%) rotate(-3deg);
 	}
 	.image4.mouseIsOver {
-		transform: translateX(300%) rotate(-3deg);
+		transform: translateX(400%) rotate(-3deg);
 	}
 
 </style>
