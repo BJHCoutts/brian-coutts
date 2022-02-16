@@ -3,24 +3,23 @@
 	img {
 		background-color: grey;
 		width: 25%;
-		height: 25%;
+		aspect-ratio: 1 / 1;
 		position: absolute;
 	}
 
 	.animatedContainer {
 		transform-origin: center;
-		border: 2px solid red;
 		height: 50%;
 		width: 50%;
 		position: absolute;
 		inset: 25%;
-		transition: 1s;
+		transition: .4s ease-in-out;
 		cursor: pointer;
-		transform: scale(100%, 100%) rotate(0deg);
+		transform: scale(100%, 100%) rotate(-1deg);
 	}
 	
 	.animatedContainer:hover {
-		transform: scale(125%, 150%) rotate(15deg);
+		transform: scale(125%, 150%) rotate(1deg);
 	}
 
 	.background {
@@ -36,27 +35,32 @@
 	}
 
 	.image1{
-		top: 0;
-		right: auto;
-		left:0;
-		bottom: auto;
+		top: -20%;
+		left: 50%;
 	}
 
 	.image2{
-		top: 0;
-		right:0;
-		bottom: auto;
-		left: auto;
+		top: 30%;
+		right: -10%;
 	}
 	
 	.image3{
-		bottom: 0;
-		left:0;
+		bottom: -20%;
+		right: 50%;
 	}
 
 	.image4{
-		bottom: 0;
-		right:0;
+		bottom: 30%;
+		left:-10%;
+	}
+
+	.image5{
+		bottom: 30%;
+		left:-10%;
+	}
+	.image6{
+		bottom: 30%;
+		left:-10%;
 	}
 
 </style>
@@ -69,6 +73,8 @@
 		<img src='' alt='' class='image2'/>
 		<img src='' alt='' class='image3' />
 		<img src='' alt='' class='image4' />
+		<img src='' alt='' class='image5' />
+		<img src='' alt='' class='image6' />
 
 	</div>
 

@@ -8,20 +8,21 @@
 	import ArtText from "./ArtText.svelte";
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
-import MultiImage from '../../shared/featured/MultiImage.svelte';
+import MultiImageExpand from '../../shared/featured/MultiImageExpand.svelte';
+import MultiImageJs from '../../shared/featured/MultiImageJS.svelte';
 
 </script>
 
 <FeaturedContainer>
 
 	<FeaturedRowImageLeft>
-		<MultiImage />
+		<MultiImageExpand />
 		<WebDevText />
 	</FeaturedRowImageLeft>
 	
 	<FeaturedRowImageRight>
 		<DesignText />
-		<FeaturedImage imageFileName={`aleppo.jpg`} />
+		<MultiImageJs />
 	</FeaturedRowImageRight>
 
 	<FeaturedRowImageLeft>
