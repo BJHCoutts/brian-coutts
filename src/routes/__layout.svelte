@@ -58,11 +58,6 @@
 		color: var(--fg);
 		font-family: var(--sans);
 		scroll-behavior: smooth;
-		height: 100vh;
-	}
-
-	:global(body) {
-		height: 100vh;
 	}
 	
 	:global(a) {

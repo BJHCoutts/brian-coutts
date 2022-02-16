@@ -3,28 +3,28 @@
 	import FeaturedContainer from '../../shared/featured/FeaturedContainer.svelte';
 	import FeaturedRowImageLeft from '../../shared/featured/FeaturedRowImageLeft.svelte';
 	import FeaturedRowImageRight from '../../shared/featured/FeaturedRowImageRight.svelte';
-	import FeaturedImage from '../../shared/featured/FeaturedImage.svelte';
 
 	import ArtText from "./ArtText.svelte";
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
+	import MultiImageExpand from '../../shared/featured/MultiImageExpand.svelte';
 
 </script>
 
 <FeaturedContainer>
 
 	<FeaturedRowImageLeft>
-		<FeaturedImage imageFileName={`aleppo.jpg`} />
+		<MultiImageExpand />
 		<WebDevText />
 	</FeaturedRowImageLeft>
 	
 	<FeaturedRowImageRight>
 		<DesignText />
-		<FeaturedImage imageFileName={`aleppo.jpg`} />
+		<MultiImageExpand />
 	</FeaturedRowImageRight>
 
 	<FeaturedRowImageLeft>
-		<FeaturedImage imageFileName={`aleppo.jpg`} />
+		<MultiImageExpand />
 		<ArtText />
 	</FeaturedRowImageLeft>
 
