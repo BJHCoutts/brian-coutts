@@ -11,20 +11,37 @@
 
 </script>
 
+<style>
+
+	a {
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		min-height: fit-content;
+	}
+
+</style>
+
 <FeaturedContainer>
 
 	<FeaturedRowImageLeft>
-		<MultiImageExpand />
+		<a href="/webdev">
+			<MultiImageExpand />
+		</a>
 		<WebDevText />
 	</FeaturedRowImageLeft>
 	
 	<FeaturedRowImageRight>
 		<DesignText />
-		<MultiImageExpand />
+		<a href="/design">
+			<MultiImageExpand />
+		</a>
 	</FeaturedRowImageRight>
-
+		
 	<FeaturedRowImageLeft>
-		<MultiImageExpand />
+		<a href="/webdev">
+			<MultiImageExpand />
+		</a>
 		<ArtText />
 	</FeaturedRowImageLeft>
 

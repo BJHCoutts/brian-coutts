@@ -30,6 +30,7 @@
 		transition: .4s ease-in-out;
 		cursor: pointer;
 		transform: scale(100%, 100%) rotate(-1deg);
+		min-height: 150px;
 	}
 	
 	.animatedContainer:hover {
@@ -42,10 +43,14 @@
 		width: 50%;
 		position: absolute;
 		inset: 25%;
+		min-height: 150px;
 	}
 
 	.container {
 		position: relative;
+		height: 100%;
+		width: 100%;
+		min-height: fit-content;
 	}
 
 	.image1 {
@@ -88,6 +93,7 @@
 
 	<div class='background' />
 	<div class="animatedContainer" on:mouseenter={() => isMouseOver = true} on:mouseleave={()=>isMouseOver = false} >
+
 		<FeaturedImage imageFileName={imageFileNames[0]} />
 		<img src={`/images/${imageFileNames[1]}`} alt='' class='image1' class:mouseIsOver='{isMouseOver}' />
 		<img src={`/images/${imageFileNames[2]}`} alt='' class='image2' class:mouseIsOver='{isMouseOver}' />
