@@ -1,5 +1,9 @@
 <script lang='ts'>
 
+	import FeaturedImage from "./FeaturedImage.svelte";
+
+	export let imageFileNames = ['aleppo.jpg', 'aleppo.jpg', 'aleppo.jpg', 'aleppo.jpg', 'aleppo.jpg',]
+
 	let isMouseOver = false
 
 </script>
@@ -11,6 +15,10 @@
 		width: 25%;
 		aspect-ratio: 1 / 1;
 		position: absolute;
+		transition: .3s ease-in;
+		box-shadow: var(--box-shadow);
+		object-fit: contain;
+		background: none;
 	}
 
 	.animatedContainer {
@@ -25,7 +33,7 @@
 	}
 	
 	.animatedContainer:hover {
-		transform: scale(125%, 150%) rotate(1deg);
+		transform: scale(150%, 150%) rotate(1deg);
 	}
 
 	.background {
@@ -60,17 +68,18 @@
 		left:-10%;
 	}
 
-	.image5 {
-		bottom: 30%;
-		left:-10%;
-	}
-	.image6 {
-		bottom: 30%;
-		left:-10%;
+	.image1.mouseIsOver {
+		transform: translateY(250%) rotate(-3deg);
 	}
 
-	.mouseIsOver {
-		border: solid 3px red;
+	.image2.mouseIsOver {
+		transform: translateX(-300%) rotate(-3deg);
+	}
+	.image3.mouseIsOver {
+		transform: translateY(-250%) rotate(-3deg);
+	}
+	.image4.mouseIsOver {
+		transform: translateX(300%) rotate(-3deg);
 	}
 
 </style>
@@ -79,12 +88,11 @@
 
 	<div class='background' />
 	<div class="animatedContainer" on:mouseenter={() => isMouseOver = true} on:mouseleave={()=>isMouseOver = false} >
-		<img src='' alt='' class='image1' class:mouseIsOver='{isMouseOver}'/>
-		<img src='' alt='' class='image2' />
-		<img src='' alt='' class='image3' />
-		<img src='' alt='' class='image4' />
-		<img src='' alt='' class='image5' />
-		<img src='' alt='' class='image6' />
+		<FeaturedImage imageFileName={imageFileNames[0]} />
+		<img src={`/images/${imageFileNames[1]}`} alt='' class='image1' class:mouseIsOver='{isMouseOver}' />
+		<img src={`/images/${imageFileNames[2]}`} alt='' class='image2' class:mouseIsOver='{isMouseOver}' />
+		<img src={`/images/${imageFileNames[3]}`} alt='' class='image3' class:mouseIsOver='{isMouseOver}' />
+		<img src={`/images/${imageFileNames[4]}`} alt='' class='image4' class:mouseIsOver='{isMouseOver}' />
 
 	</div>
 
