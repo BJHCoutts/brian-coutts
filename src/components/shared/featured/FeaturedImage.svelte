@@ -1,8 +1,8 @@
-<script>
+<script lang='ts'>
 
 	import { appearOnScroll } from "../../../utils/appearOnScroll";
 
-	export let imageFileName
+	export let imageFileName: string
 
 </script>
 <style>
@@ -18,6 +18,11 @@
 		object-position: center;
 	}
 
+	.container {
+		overflow: hidden;
+		max-height: 100%;
+	}
+
 	.image-onscreen {
 		opacity: 1;
 		transform: rotateX(0deg);
@@ -25,7 +30,7 @@
 
 </style>
 
-<div>
-	<img src={`/images/${imageFileName}`} alt="placeholder" use:appearOnScroll>
+<div class="container">
+	<img src={`${imageFileName}`} alt={`${imageFileName}`} use:appearOnScroll>
 	<div style='display:hidden;' class="image-onscreen"/>
 </div>

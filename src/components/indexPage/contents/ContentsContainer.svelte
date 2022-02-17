@@ -8,9 +8,12 @@
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
 	import MultiImageExpand from '../../shared/featured/MultiImageExpand.svelte';
-	import { abstractArt } from '../../../stores/files';
+	import { shuffle } from '../../../utils/shuffle';
+	import { allImages } from '../../../stores/files';
 
-	console.log(Object.keys(abstractArt)[0].slice(7))
+	const webDevImages = shuffle(allImages)
+	const designImages = shuffle(allImages)
+	const artImages = shuffle(allImages)
 
 </script>
 
@@ -25,15 +28,11 @@
 
 </style>
 
-<p>doop</p>
-<img src={Object.keys(abstractArt)[0].slice(7)} alt="">
-<p>doop</p>
-
 <FeaturedContainer>
 
 	<FeaturedRowImageLeft>
 		<a href="/webdev">
-			<MultiImageExpand />
+			<MultiImageExpand imageFileNames={webDevImages} />
 		</a>
 		<WebDevText />
 	</FeaturedRowImageLeft>
@@ -41,13 +40,13 @@
 	<FeaturedRowImageRight>
 		<DesignText />
 		<a href="/design">
-			<MultiImageExpand />
+			<MultiImageExpand imageFileNames={designImages} />
 		</a>
 	</FeaturedRowImageRight>
 		
 	<FeaturedRowImageLeft>
-		<a href="/webdev">
-			<MultiImageExpand />
+		<a href="/art">
+			<MultiImageExpand imageFileNames={artImages} />
 		</a>
 		<ArtText />
 	</FeaturedRowImageLeft>

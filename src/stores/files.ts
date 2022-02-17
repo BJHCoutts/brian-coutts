@@ -1,8 +1,3 @@
-// glob gather directory of images
+export const abstractArtImages = Object.keys(import.meta.glob("/static/images/abstractExpressionist/*.{png,svg}")).map( fileName => fileName.slice(7))
 
-// just do everything random
-
-export const abstractArt = import.meta.glob("/static/images/abstractExpressionist/*.png");
-// export const abstractArt = import.meta.glob("/images/abstractArt/*.{png,svg}");
-// export const abstractArt = import.meta.glob("../static/images/**/*.{png,svg}");
-
+export const allImages = [...abstractArtImages]
