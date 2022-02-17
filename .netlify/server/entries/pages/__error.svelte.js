@@ -25,7 +25,7 @@ __export(exports, {
   default: () => _error,
   load: () => load
 });
-var import_index_544abe4e = __toModule(require("../../chunks/index-544abe4e.js"));
+var import_index_ab720396 = __toModule(require("../../chunks/index-ab720396.js"));
 var __error_svelte_svelte_type_style_lang = "";
 const css = {
   code: "h1.svelte-1apd9nf{font-size:2.5rem}",
@@ -36,10 +36,10 @@ function load({ error, status }) {
     props: { title: `${status}: ${error.message}` }
   };
 }
-const _error = (0, import_index_544abe4e.c)(($$result, $$props, $$bindings, slots) => {
+const _error = (0, import_index_ab720396.c)(($$result, $$props, $$bindings, slots) => {
   let { title } = $$props;
   if ($$props.title === void 0 && $$bindings.title && title !== void 0)
     $$bindings.title(title);
   $$result.css.add(css);
-  return `<section class="${"main-grid-layout padding"}"><div class="${"main-grid-center padding neumorph-35-flat"}"><h1 class="${"svelte-1apd9nf"}">${(0, import_index_544abe4e.e)(title)}</h1></div></section>`;
+  return `<section class="${"main-grid-layout padding"}"><div class="${"main-grid-center padding neumorph-35-flat"}"><h1 class="${"svelte-1apd9nf"}">${(0, import_index_ab720396.e)(title)}</h1></div></section>`;
 });

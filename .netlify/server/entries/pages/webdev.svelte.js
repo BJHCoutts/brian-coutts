@@ -24,8 +24,8 @@ var __toModule = (module2) => {
 __export(exports, {
   default: () => Webdev
 });
-var import_index_544abe4e = __toModule(require("../../chunks/index-544abe4e.js"));
-const Webdev = (0, import_index_544abe4e.c)(($$result, $$props, $$bindings, slots) => {
+var import_index_ab720396 = __toModule(require("../../chunks/index-ab720396.js"));
+const Webdev = (0, import_index_ab720396.c)(($$result, $$props, $$bindings, slots) => {
   return `<h1>Web Dev Page</h1>
 
 <p><a href="${"https://drive.google.com/file/d/1fN5i6lWL9IWDJQ2zZJ3D8HV--x1ErYSz/view?usp=sharing"}">Link to Visual Portfolio PDF</a></p>`;

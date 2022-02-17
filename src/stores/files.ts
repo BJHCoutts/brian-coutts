@@ -1,10 +1,3 @@
-// glob gather directory of images
+export const abstractArtImages = Object.keys(import.meta.glob("/static/images/abstractExpressionist/*.{png,svg}")).map( fileName => fileName.slice(7))
 
-// just do everything random
-
-const fs = require('fs');
-const files = fs.readdirSync('/');
-// const abstractArt
-
-console.log(files)
-console.log('hi')
+export const allImages = [...abstractArtImages]
