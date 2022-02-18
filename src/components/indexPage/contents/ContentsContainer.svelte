@@ -8,12 +8,8 @@
 	import DesignText from "./DesignText.svelte";
 	import WebDevText from "./WebDevText.svelte";
 	import MultiImageExpand from '../../shared/featured/MultiImageExpand.svelte';
-	import { shuffle } from '../../../utils/shuffle';
 	import { allImages } from '../../../stores/files';
-
-	const webDevImages = shuffle(allImages)
-	const designImages = shuffle(allImages)
-	const artImages = shuffle(allImages)
+	import { shuffle } from '../../../utils/shuffle';
 
 </script>
 
@@ -32,7 +28,7 @@
 
 	<FeaturedRowImageLeft>
 		<a href="/webdev">
-			<MultiImageExpand imageFileNames={webDevImages} />
+			<MultiImageExpand imageFileNames={shuffle($allImages).slice(0,5)} />
 		</a>
 		<WebDevText />
 	</FeaturedRowImageLeft>
@@ -40,13 +36,13 @@
 	<FeaturedRowImageRight>
 		<DesignText />
 		<a href="/design">
-			<MultiImageExpand imageFileNames={designImages} />
+			<MultiImageExpand imageFileNames={shuffle($allImages).slice(1,6)} />
 		</a>
 	</FeaturedRowImageRight>
 		
 	<FeaturedRowImageLeft>
 		<a href="/art">
-			<MultiImageExpand imageFileNames={artImages} />
+			<MultiImageExpand imageFileNames={shuffle($allImages).slice(2,7)} />
 		</a>
 		<ArtText />
 	</FeaturedRowImageLeft>
