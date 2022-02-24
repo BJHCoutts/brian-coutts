@@ -8,7 +8,7 @@
 
 </style>
 
-<section class="contents-container margin-bottom">
+<section class="margin-bottom">
 
 	<slot/>
 
