@@ -9,8 +9,8 @@
 
 	img {
 		background-color: darkslategrey;
-		height: 100%;
 		width: 100%;
+		aspect-ratio: 1 / 1;
 		transition: all .5s ease-in;
 		opacity: 0;
 		transform: rotateX(90deg);

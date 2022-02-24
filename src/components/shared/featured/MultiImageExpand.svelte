@@ -38,17 +38,18 @@
 	}
 
 	.background {
-		background-color: darkslategrey;
-		height: 50%;
 		width: 50%;
+		aspect-ratio: 1 / 1;
 		position: absolute;
 		inset: 25%;
 		min-height: 150px;
+		display: grid;
+		place-items: center;
 	}
 
 	.container {
 		position: relative;
-		height: 100%;
+		aspect-ratio: 1 / 1;
 		width: 100%;
 		z-index: 1;
 	}
@@ -78,14 +79,14 @@
 	}
 
 	.image1.mouseIsOver {
-		transform: translateY(340%) rotate(-3deg);
+		transform: translateY(500%) rotate(-3deg);
 	}
 
 	.image2.mouseIsOver {
 		transform: translateX(-400%) rotate(-3deg);
 	}
 	.image3.mouseIsOver {
-		transform: translateY(-360%) rotate(-3deg);
+		transform: translateY(-500%) rotate(-3deg);
 	}
 	.image4.mouseIsOver {
 		transform: translateX(400%) rotate(-3deg);
@@ -99,6 +100,7 @@
 	<div class="animatedContainer" on:mouseenter={() => isMouseOver = true} on:mouseleave={()=>isMouseOver = false} >
 
 		<FeaturedImage imageFileName={imageFileNames[0]} />
+
 		<img src={`${imageFileNames[1]}`} alt={`${imageFileNames[1]}`} class='image1' class:mouseIsOver='{isMouseOver}' />
 		<img src={`${imageFileNames[2]}`} alt={`${imageFileNames[2]}`} class='image2 glassmorph' class:mouseIsOver='{isMouseOver}' />
 		<img src={`${imageFileNames[3]}`} alt={`${imageFileNames[3]}`} class='image3' class:mouseIsOver='{isMouseOver}' />
