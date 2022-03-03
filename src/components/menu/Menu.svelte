@@ -64,6 +64,10 @@
 			</li>
 
 			<li>
+				<a href='playground/'>Dev Playground</a>
+			</li>
+
+			<li>
 				<a href='contact/'>Contact</a>
 			</li>
 
