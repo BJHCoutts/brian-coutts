@@ -5,6 +5,7 @@
 	export let imageFileName: string
 
 </script>
+
 <style>
 
 	img {

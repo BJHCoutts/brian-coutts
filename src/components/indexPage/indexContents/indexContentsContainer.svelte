@@ -10,6 +10,7 @@
 	import MultiImageExpand from '../../shared/featured/MultiImageExpand.svelte';
 	import { allImages } from '../../../stores/files';
 	import { shuffle } from '../../../utils/shuffle';
+import PlaygroundText from './PlaygroundText.svelte';
 
 </script>
 
@@ -39,12 +40,19 @@
 			<MultiImageExpand imageFileNames={shuffle($allImages).slice(1,6)} />
 		</a>
 	</FeaturedRowImageRight>
-		
+	
 	<FeaturedRowImageLeft>
 		<a href="/art">
 			<MultiImageExpand imageFileNames={shuffle($allImages).slice(2,7)} />
 		</a>
 		<ArtText />
 	</FeaturedRowImageLeft>
+	
+	<FeaturedRowImageRight>
+		<PlaygroundText />
+		<a href="/playground">
+			<MultiImageExpand imageFileNames={shuffle($allImages).slice(1,6)} />
+		</a>
+	</FeaturedRowImageRight>
 
 </FeaturedContainer>
